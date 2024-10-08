@@ -160,15 +160,20 @@
         this.resetResult()
       },  
       addUnloadingSpot() {
+        this.resetResult()
         this.unloadingSpots.push({value: null, index: this.unloadingIndex ++})
       },
       removeUnloadingSpot(unloadingSpot) {
+        this.resetResult()
         this.unloadingSpots = this.unloadingSpots.filter(u => u.index !== unloadingSpot.index)
       },
       addLoadingSpot() {
+        this.resetResult()
         this.loadingSpots.push({value: null, index: this.loadingIndex ++})
       },
       removeLoadingSpot(loadingSpot) {
+        this.resetResult()
+
         this.loadingSpots = this.loadingSpots.filter(l => l.index !== loadingSpot.index)
       },
       setResultDetails(summary, geometry) {

@@ -217,14 +217,14 @@
 <template>
   <v-row class="flex-column flex-md-row">
     <v-col class="col-auto form-details" style="max-width: 600px">
-      <h2 class="title">Route configuration</h2>
+      <h2 class="title fw-700 black-800">Route configuration</h2>
       <v-row>
         <v-col>
-          <h3 class="section-title">Loading</h3>
+          <h3 class="section-title fw-700 black-800">Loading</h3>
         </v-col>
         <v-col class="d-flex">
           <v-spacer></v-spacer>
-          <span class="add-btn" @click="addLoadingSpot">
+          <span class="add-btn fw-700 black-800" @click="addLoadingSpot">
             Add loading spot
           </span>
         </v-col>
@@ -236,11 +236,11 @@
       </div>
       <v-row>
         <v-col>
-          <h3 class="section-title">Unloading</h3>
+          <h3 class="section-title fw-700 black-800">Unloading</h3>
         </v-col>
         <v-col class="d-flex">
           <v-spacer></v-spacer>
-          <span @click="addUnloadingSpot" class="add-btn">
+          <span @click="addUnloadingSpot" class="add-btn fw-700 black-800">
             Add unloading spot
           </span>
         </v-col>
@@ -252,7 +252,7 @@
       </div>
       <v-row>
         <v-col>
-          <h3 class="section-title mb-4">More features</h3>
+          <h3 class="section-title fw-700 mb-4 black-800">More features</h3>
           <v-select
             :items="countryListWithCode"
             label="Avoid countries"
@@ -266,7 +266,7 @@
       </v-row>
       <v-row>
         <v-col>
-          <v-btn @click="calculateRoute" width="100%" class="calculate-btn" :disabled="disableBtn" :loading="loading">
+          <v-btn @click="calculateRoute" width="100%" class="calculate-btn fw-700" :disabled="disableBtn" :loading="loading">
             Calculate Route
           </v-btn>
         </v-col>
@@ -294,22 +294,13 @@
 <style>
   .add-btn {
     text-decoration: underline;
-    font-family: "Lato", sans-serif;
     cursor: pointer;
-    font-weight: 700;
-    color: #121231;
   }
 
   .section-title {
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-    color: #121231;
     font-size: 20px;
   }
   .title {
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-    color: #121231;
     font-size: 24px;
     margin-bottom: 32px;
   }
@@ -327,7 +318,6 @@
   }
 
   .result .header {
-    font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
@@ -337,7 +327,6 @@
   }
 
   .result .value {
-    font-family: "Lato", sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 38.4px;
@@ -356,8 +345,6 @@
     color: white;
     text-transform: none;
     font-size: 16px;
-    font-family: "Lato", sans-serif;
     letter-spacing: 0;
-    font-weight: 700;
   }
 </style>

@@ -5,7 +5,7 @@ import vuetify from './plugins/vuetify'
 
 import { LMap, LTileLayer, LMarker, LPolyline, LPopup } from 'vue2-leaflet';
 import 'leaflet/dist/leaflet.css';
-
+import '@/assets/style.css'
 
 
 Vue.component('l-map', LMap);

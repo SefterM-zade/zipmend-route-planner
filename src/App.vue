@@ -36,3 +36,8 @@ export default {
   }),
 };
 </script>
+<style>
+ .v-application {
+  font-family: "Lato", sans-serif !important;
+ }
+</style>
